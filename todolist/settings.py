@@ -24,6 +24,7 @@ SECRET_KEY = "@e2(yx)v&tgh3_s=0yja-i!dpebxsz^dg47x)-k&kq_3zf*9e*"
 DEBUG = True
 
 ALLOWED_HOSTS = os.getenv("DJANGO_ALLOWED_HOSTS", "").split(",")
+CSRF_TRUSTED_ORIGINS = ["https://*.azurewebsites.net"]
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
 
